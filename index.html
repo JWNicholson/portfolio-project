@@ -4,136 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://kit.fontawesome.com/9c63456cc9.js" crossorigin="anonymous"></script>
-
-<script src="https://kit.fontawesome.com/9c63456cc9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9c63456cc9.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:700|Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="stylesheet.css">
 
-    <title>John Nicholson - Web Dev</title>
+    <title>John Nicholson Web Developer</title>
 </head>
 <body>
+    
+        <navbar class="flex-row">
+           
+            <nav class="flex-row">
+                <a href="#about-me_article" class="nav-item">About me</a>
+                <a href="#skills-list" class="nav-item">Skills</a>
+                <a href="#projects-list" class="nav-item">Projects</a>
+            </nav>
+    
+            
 
-      <!-- Header -->
-    <div class="header">
-      <h1>John Nicholson</h1>
-      <h2>Web Developer</h2>
-      <p><em>Building Solid, Secure web apps, so you don't have to.</em></p>
-    </div>
+        </navbar>
+        <!-- future brush-braces-logo or social links
+         <div></div>-->
+         <section class="main">
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-      <a href="#">Bio</a>
-      <a href="#">Skills</a>
-      <a href="mailto:john.nicholson812@outlook.com">Contact Me</a>
-    </div>
-<div class="main-wrapper ">
-  <section class="intro ">
-    <div class='row'>
-    <div class='column'>
-      <div class='info-column'>
-        <div class="prof-img">
-          <img src="john-nicholson_prof_img.jpg" alt="">
+    <header class="flex-row">
+        <section class="header-banner flex-column">
+            <h1>John Nicholson</h1>
+            <h2>Web Developer</h2>
+            <p><em>Building Solid, Secure web apps, so you don't have to.</em></p>
+        </section>
+    </header>
+
+    
+
+    <section class="intro flex-row">
+        <div class="prof-img-container flex-row">
+            <img src="john-nicholson_prof_img.jpg" alt="John Nicholson Web Developer profile image">
         </div>
-      </div>
-    </div>
-    <div class='column'>
-      <div class='contact-column'>
-          <p class="contact-info">
-        Hi there. I love helping business owners improve their digital footprint.
+
+        <article id="about-me_article" class="about flex-column">
+            <p>
+                Hi there. I love helping business owners improve their digital footprint.
           My web apps are engineered for fast load times and low-lag.
-          My layouts look great
+        </p>
+          <p> My layouts look great
           on any size device, big or small. I also make sure their intuitive,
           so they are easy to use.
-          <p/>
+            </p>
 
-            <div >
-              <a class="email-button" href="mailto:john.nicholson812@outlook.com"><i class="far fa-envelope"></i> Send me an email</a>
+            <div class="email-link">
+                <a class="email-button" href="mailto:john.nicholson812@outlook.com"><i class="far fa-envelope"></i> Send me an email</a>
+              </div>
+        </article>
+    </section><!--end section.intro-->
+
+    <section class="skills-projects flex-row">
+        <div id="skills-list" class="skills flex-column">
+           
+            <div id="skills-list_ul">
+                <h3>Skills:</h3>
+              <p>HTML&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp; <i style="color:#20B2AA;" class="fab fa-html5"></i></p>
+                <p>CSS&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp; <i style="color:#346e84;" class="fab fa-css3-alt"></i></p>
+                  <p>JavaScript&nbsp;&nbsp&nbsp; <i style="color:#428279;" class="fab fa-js-square"></i></p>
+                    <p>React JS&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp;&nbsp; <i style="color:blue;" class="fab fa-react"></i></p>
             </div>
-
-      </div>
-    </div>
-  </div><!--end row -->
-
-  </section>
-
-  <section class="intro ">
-    <div class='row'>
-    <div class='column'>
-      <div class='info-column'>
-        <div class="prof-img">
-          <div class="skills-container">
-            <h3>Skills:</h3>
-            <ul>
-              <li>HTML</li>
-                <li>CSS</li>
-                  <li>JavaScript</li>
-                    <li>React JS</li>
-            </ul>
-           </div><!-- skills-container -->
         </div>
-      </div>
-    </div>
-    <div class='column'>
-      <div class='contact-column'>
-        <div class="projects-container">
-          <h3>Projects: </h3>
 
-          <dl class="projects-list">
-            <dt>&nbsp;&nbsp;   <a href="https://codepen.io/JWNichollson/pen/eYmKedm">Sweet Eats Bakery</a></dt>
-             <dd>An exercise in CSS selctors.</dd>
-             <dt>&nbsp;&nbsp; <a href="https://prisonerskills-jwn.netlify.com/">Prisoner Skills project</a></dt>
-              <dd>A team project. My job was to design and build the front end. This project was built using LESS CSS</dd>
+        <div id="projects-list" class="projects flex-row">
+            <h3>Projects: </h3>
 
-              <dt>&nbsp;&nbsp;<a href="https://github.com/JWNicholson/nasa-photo-of-the-day/tree/john-nicholson">NASA pic of the day</a></dt>
-                <dd>This was a fun project built with ReactJS and Styled-Components. It pulls in NASA's image of the day.<br>
-                Take a look at the code.</dd>
-            </dl>
-         </div><!-- skills-container -->
+            <dl class="projects-list">
+              <dt>&nbsp;&nbsp;   <a href="https://codepen.io/JWNichollson/pen/eYmKedm">Sweet Eats Bakery</a></dt>
+               <dd>An exercise in CSS selctors.</dd>
+               <dt>&nbsp;&nbsp; <a href="https://prisonerskills-jwn.netlify.com/">Prisoner Skills project</a></dt>
+                <dd>A team project. My job was to design and build the front end. This project was built using LESS CSS.</dd>
+  
+                <dt>&nbsp;&nbsp;<a href="https://github.com/JWNicholson/nasa-photo-of-the-day/tree/john-nicholson">NASA pic of the day</a></dt>
+                  <dd>This was a fun project built with ReactJS and Styled-Components. It pulls in NASA's image of the day.<br>
+                  Take a look at the code.</dd>
+              </dl>
+        </div>
 
-      </div>
-    </div>
-  </div><!--end row -->
+    </section><!--end skills-projects-->
 
-  </section>
+</section><!--end section.main-->
 
-  <div class="row">
-
-  </div><!--end row -->
-
-    <div class="column">
-      <div class="skills-column">
-
-         </div>
-    </div>
-
-    <div class="column">
-
-    </div>
-
-</div><!--end main-wrapper-->
-
-    <!-- Footer -->
-    <footer>
-        <section class="social-links">
-          <span class="social-icon">
-          <a href="https://github.com/JWNicholson"><i class="fab fa-git-alt"></i></a>
-        </span>
-        <span class="social-icon">
-        <a href="https://codepen.io/JWNichollson"><i class="fab fa-codepen"></i></a>
-      </span>
+<!-- Footer -->
+<footer>
+    <section class="social-links">
       <span class="social-icon">
-      <a href="https://www.linkedin.com/in/jnicholson812/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/JWNicholson"><i class="fab fa-git-alt"></i></a>
     </span>
-        </section>
+    <span class="social-icon">
+    <a href="https://codepen.io/JWNichollson"><i class="fab fa-codepen"></i></a>
+  </span>
+  <span class="social-icon">
+  <a href="https://www.linkedin.com/in/jnicholson812/"><i class="fab fa-linkedin"></i></a>
+</span>
+    </section>
 
-        <section class="footer-links">
-            <ul>
-                <li><i class="far fa-copyright"></i> 2020 John Nicholson</li>
-            </ul>
-        </section>
+    <section class="footer-links">
+        <ul>
+            <li><i class="far fa-copyright"></i> 2020 John Nicholson</li>
+        </ul>
+    </section>
 
-    </footer>
+</footer>
 
 </body>
 </html>
