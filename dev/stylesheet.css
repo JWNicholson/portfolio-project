@@ -2,8 +2,186 @@ body {
     font-family: 'Source Sans Pro',serif ;
     font-weight:500;
     margin: 0;
+
+    /* background-color: hotpink; */
   }
   
   h1,h2,h3,h4,h5,h6{
       font-family: 'Roboto',serif ;
   }
+
+ ul {
+     list-style: none;
+ }
+ 
+
+  /**********/
+
+  .main{
+      background-color: ghostwhite;
+      max-width: 1140px;
+      margin:auto;
+      padding-top: 2%;
+  }
+
+  .flex-row {
+      display: flex;
+      flex-flow: row wrap;
+  }
+
+  .flex-column {
+      display: flex;
+      flex-flow: column nowrap;
+  }
+
+ /*top nav*/
+ navbar{
+    background-color:#333;
+    justify-content: center;
+    
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a,
+.contact-btn a {
+    color:ghostwhite;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 2;
+    margin: 10px;
+}
+
+navbar nav {
+   margin-right: 4%;
+}
+
+/*header*/
+header {
+    background-color: #346e84;
+    max-width: 100%;
+    justify-content: center;
+    padding: 4%;
+}
+
+.header-banner {
+    color:ghostwhite;
+    text-align:center;
+}
+
+.header-banner h1,h2 {
+    margin: 14px;
+}
+
+/****section.intro*****/
+.intro {
+    justify-content: space-evenly;
+    padding: 24px;
+    margin-bottom: 4%;
+    border-bottom:1px solid #252a43;
+}
+
+.prof-img-container {
+    padding: 24px;
+    width: 33%;;
+    justify-content: center;
+}
+
+.prof-img-container img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 100%;
+    border:1px solid #333;
+}
+
+article.about {
+    width: 33%;
+   
+    font-size: 1.25rem;
+    justify-content: center;
+}
+
+.email-link {
+    text-align: center;
+    margin-top: 12px;
+}
+
+
+/*******contact cta********/
+.email-button {
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+}
+.email-button:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+.email-button:active {
+	position:relative;
+	top:1px;
+}
+
+/***section.skills-projects***/
+.skills-projects {
+    justify-content: center;
+}
+
+.skills {
+    width:25%;
+}
+
+#skills-list {
+
+}
+
+#skills-list ul li{
+    margin: 16px;
+}
+
+.projects-list dt{
+   margin: 16px;
+}
+/* Footer */
+footer {
+    display:flex;
+    flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: #333;
+      color:white;
+      width:100%
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-links {
+    display: flex;
+      justify-content: space-evenly;
+  }
+  
+  span.social-icon {
+      margin:24px;
+  }
+  
+  span.social-icon a{
+      color:white;
+      font-size:28px;
+  }
+
+/******media queries*******/

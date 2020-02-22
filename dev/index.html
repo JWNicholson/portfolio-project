@@ -12,8 +12,106 @@
     <title>John Nicholson Web Developer</title>
 </head>
 <body>
-    <section class="flex-row">
-        
+    
+        <navbar class="flex-row">
+           
+            <nav class="flex-row">
+                <a href="#about-me_article" class="nav-item">About me</a>
+                <a href="#skills-list" class="nav-item">Skills</a>
+                <a href="#projects-list" class="nav-item">Projects</a>
+            </nav>
+    
+            <div class="contact-btn flex-row">
+                <a class="email-button" href="mailto:john.nicholson812@outlook.com"><i class="far fa-envelope"></i> Send me an email</a>
+            </div>
+
+        </navbar>
+        <!-- future brush-braces-logo or social links
+         <div></div>-->
+         <section class="main">
+
+    <header class="flex-row">
+        <section class="header-banner flex-column">
+            <h1>John Nicholson</h1>
+            <h2>Web Developer</h2>
+            <p><em>Building Solid, Secure web apps, so you don't have to.</em></p>
+        </section>
+    </header>
+
+    
+
+    <section class="intro flex-row">
+        <div class="prof-img-container flex-row">
+            <img src="john-nicholson_prof_img.jpg" alt="John Nicholson Web Developer profile image">
+        </div>
+
+        <article id="about-me_article" class="about flex-column">
+            <p>
+                Hi there. I love helping business owners improve their digital footprint.
+          My web apps are engineered for fast load times and low-lag.
+        </p>
+          <p> My layouts look great
+          on any size device, big or small. I also make sure their intuitive,
+          so they are easy to use.
+            </p>
+
+            <div class="email-link">
+                <a class="email-button" href="mailto:john.nicholson812@outlook.com"><i class="far fa-envelope"></i> Send me an email</a>
+              </div>
+        </article>
+    </section><!--end section.intro-->
+
+    <section class="skills-projects flex-row">
+        <div id="skills-list" class="skills">
+            <h3>Skills:</h3>
+            <ul>
+              <li>HTML</li>
+                <li>CSS</li>
+                  <li>JavaScript</li>
+                    <li>React JS</li>
+            </ul>
+        </div>
+
+        <div id="projects-list" class="projects">
+            <h3>Projects: </h3>
+
+            <dl class="projects-list">
+              <dt>&nbsp;&nbsp;   <a href="https://codepen.io/JWNichollson/pen/eYmKedm">Sweet Eats Bakery</a></dt>
+               <dd>An exercise in CSS selctors.</dd>
+               <dt>&nbsp;&nbsp; <a href="https://prisonerskills-jwn.netlify.com/">Prisoner Skills project</a></dt>
+                <dd>A team project. My job was to design and build the front end. This project was built using LESS CSS.</dd>
+  
+                <dt>&nbsp;&nbsp;<a href="https://github.com/JWNicholson/nasa-photo-of-the-day/tree/john-nicholson">NASA pic of the day</a></dt>
+                  <dd>This was a fun project built with ReactJS and Styled-Components. It pulls in NASA's image of the day.<br>
+                  Take a look at the code.</dd>
+              </dl>
+        </div>
+
+    </section><!--end skills-projects-->
+
+</section><!--end section.main-->
+
+<!-- Footer -->
+<footer>
+    <section class="social-links">
+      <span class="social-icon">
+      <a href="https://github.com/JWNicholson"><i class="fab fa-git-alt"></i></a>
+    </span>
+    <span class="social-icon">
+    <a href="https://codepen.io/JWNichollson"><i class="fab fa-codepen"></i></a>
+  </span>
+  <span class="social-icon">
+  <a href="https://www.linkedin.com/in/jnicholson812/"><i class="fab fa-linkedin"></i></a>
+</span>
     </section>
+
+    <section class="footer-links">
+        <ul>
+            <li><i class="far fa-copyright"></i> 2020 John Nicholson</li>
+        </ul>
+    </section>
+
+</footer>
+
 </body>
 </html>
