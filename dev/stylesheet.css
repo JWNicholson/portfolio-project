@@ -38,7 +38,6 @@ body {
  navbar{
     background-color:#333;
     justify-content: center;
-    
     background-color: #333;
     position: fixed;
     top: 0;
@@ -54,9 +53,6 @@ nav a,
     margin: 10px;
 }
 
-navbar nav {
-   margin-right: 4%;
-}
 
 /*header*/
 header {
@@ -72,7 +68,7 @@ header {
 }
 
 .header-banner h1,h2 {
-    margin: 14px;
+    margin: 16px;
 }
 
 /****section.intro*****/
@@ -85,12 +81,12 @@ header {
 
 .prof-img-container {
     padding: 24px;
-    width: 33%;;
+    width: 33%;
     justify-content: center;
 }
 
 .prof-img-container img{
-    max-width: 90%;
+   width:100%;
     height: auto;
     border-radius: 100%;
     border:1px solid #333;
@@ -145,12 +141,17 @@ article.about {
 }
 
 #skills-list {
+   text-align: center;
+    padding: 12px;
 
 }
 
-#skills-list ul li{
-    margin: 16px;
-}
+
+
+#projects-list {
+    padding: 12px 12px;
+    border-left: 1px solid #252a43;
+ }
 
 .projects-list dt{
    margin: 16px;
@@ -185,3 +186,71 @@ footer {
   }
 
 /******media queries*******/
+
+@media only screen and (max-width: 960px) {
+   
+    .main{
+        margin-top: 0;
+    }
+
+    header {
+        margin-top: 24px;
+    }
+
+    .prof-img-container{
+        width: 48%;
+    }
+    article.about {
+        width: 40%;
+    }
+
+    .intro {
+        justify-content: space-between;
+    }
+
+   #skills-list {
+       font-size: 2em;
+   }
+
+  
+   #projects-list {
+    border-top: 1px solid #252a43;
+    border-left:none;
+ }
+}
+
+@media only screen and (max-width: 768px) {
+
+    
+   .prof-img-container {
+       width: 90%;
+      align-items: center;
+       margin:auto;
+   }
+
+   .prof-img-container img {
+       max-width: 400px;
+      max-height: 80%;
+   }
+
+   article.about {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+  #skills-list{
+      width: 50%;
+   margin: auto;
+
+   font-size: 1.5rem;
+  }
+
+  #projects-list {
+      width: 80%;
+      font-size: 1.2rem;
+      border-top: 1px solid #252a43;
+  }
+   
+}
